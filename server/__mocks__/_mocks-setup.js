@@ -1,0 +1,1 @@
+require('./DB-service.mock');
