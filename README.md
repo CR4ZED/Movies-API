@@ -51,7 +51,7 @@ To run tests, run the following command
 #### Create a token
 
 ```http
-  POST /api/v1/token
+  GET /api/v1/token
 ```
 | Payload | Type     | example |  Description                       |
 | :-------- | :------- | :- | :-------------------------------- |
@@ -93,7 +93,7 @@ Authorization is required and a token with admin role is required
 #### Update A Movie
 
 ```http
-  PUT /api/v1/movies/update
+  PUT /api/v1/movies/:id
 ```
 
 | Payload | Type  |  Description                       |
@@ -108,7 +108,7 @@ Authorization is required and a token with admin role is required
 #### Delete A Movie
 
 ```http
-  DELETE /api/v1/movies/delete/:id
+  DELETE /api/v1/movies/:id
 ```
 
 Authorization is required and a token with admin role is required
